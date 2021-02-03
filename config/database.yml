@@ -19,7 +19,7 @@ default: &default
 
 development:
   <<: *default
-  database: twitter_practice_development
+  database: aws-and-infra-web
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: twitter_practice_production
-  username: twitter_practice
+  database: aws-and-infra-web
+  username: root
   password: <%= ENV['TWITTER_PRACTICE_DATABASE_PASSWORD'] %>
